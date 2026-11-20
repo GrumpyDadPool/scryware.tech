@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scryware Command | Fleet monitoring and self-healing</title>
+<meta name="description" content="Hub-and-spoke fleet monitoring and self-healing for MSPs and small businesses, with a browser-based Command Center.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="scryware-logo.png" type="image/png">
+<style>
+:root {
+  --bg: #ffffff;
+  --panel: #f4f7f5;
+  --border: #dde4df;
+  --text: #16211b;
+  --muted: #4d5c54;
+  --accent: #0c7a43;
+}
+body { background: #ffffff; }
+.cta { color: #ffffff; }
+.step-num { color: #ffffff; }
+.form-input { background: #ffffff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="logo" href="index.html"><img src="scryware-logo.png" alt="Scryware" width="1348" height="310"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#how">How it works</a>
+      <a href="#pilot">Pilot access</a>
+      <a href="https://scryware.io/company.html">Company</a>
+      <a href="https://scryware.io/privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <div class="kicker">Fleet monitoring and self-healing</div>
+    <h1>Meet <span>Scryware Command</span>.</h1>
+    <p>A hub-and-spoke fleet monitoring and self-healing platform. Lightweight reporters on every machine dial in to a central hub, which collects health reports, queues remediation commands, and serves a browser-based Command Center plus a versioned REST API, so you can manage many machines from any device on your network.</p>
+    <div class="cta-row">
+      <a class="cta" href="#pilot">Request Pilot Access</a>
+      <a class="cta-ghost" href="#how">How it works</a>
+    </div>
+  </div>
+
+  <section class="block" id="how">
+    <h2>How it works</h2>
+    <p class="sub">Three moving parts, one calm dashboard.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Deploy the reporters</h3>
+          <p>Lightweight agents install on each endpoint and dial <em>out</em> to the hub. No inbound firewall rules, no VPN, no exposed ports on the machines you watch.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Watch the fleet</h3>
+          <p>The hub collects health reports from every reporter. The Command Center, a browser console, shows the whole fleet's status, with role-based access and dual authentication for your team.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Heal in real time</h3>
+          <p>Queue remediation commands from the hub and let the system correct problems as they happen. Underneath sits a stateful diagnostic agent that inspects network status, analyzes logs, executes safe scripts, and retains conversation context across turns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>What's inside</h2>
+    <p class="sub">Built for the realities of running other people's infrastructure.</p>
+    <ul class="feature-list">
+      <li><strong>Command Center</strong><span>Browser-based fleet console: health reports, remediation queue, ops chat, and access management, from any device on your LAN.</span></li>
+      <li><strong>Endpoint reporters</strong><span>Lightweight agents that dial out to the hub. Designed for fleets of Windows and Linux machines.</span></li>
+      <li><strong>Diagnostic agent</strong><span>A modular, stateful agent that inspects network status, analyzes logs, runs safe scripts, and remembers context across conversations.</span></li>
+      <li><strong>Self-healing</strong><span>Queue remediation centrally; the system corrects problems in real time instead of paging you at 3 AM.</span></li>
+      <li><strong>Versioned REST API</strong><span>A stable API for managing the fleet programmatically. Script it, integrate it, automate it.</span></li>
+      <li><strong>Security model</strong><span>Dual authentication, role-based access, and cookie login. Built assuming hostile networks.</span></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>Who it's for</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Managed service providers</h3>
+        <p>One console for every client fleet. See health across customers, push remediations centrally, and stop RDP-hopping between machines to check on things.</p>
+      </div>
+      <div class="card">
+        <h3>Small businesses</h3>
+        <p>Enterprise-grade visibility without an enterprise ops team. Know your systems are healthy, and have them fix themselves when they are not.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pilot">
+    <h2>Request pilot access</h2>
+    <p class="sub">Scryware Command is piloted with MSPs and small businesses that want fleet visibility without another heavy platform. Tell us what you run and what you would pilot, and the request lands directly in Kevin's inbox.</p>
+    <div class="framed" id="thanks" style="display:none; margin-bottom: 24px;">
+      <p><strong>Thanks for your interest.</strong> Your pilot request is on its way. Kevin reads every request personally and will reply at the email you gave.</p>
+    </div>
+    <div class="form-card">
+      <form action="https://formsubmit.co/kevin@scryware.io" method="POST">
+        <input type="hidden" name="_subject" value="Pilot Access Request - Scryware Command">
+        <input type="hidden" name="_next" value="https://scryware.tech/?thanks=1">
+        <label class="form-label" for="pilot-name">Name</label>
+        <input class="form-input" id="pilot-name" name="name" type="text" required>
+        <label class="form-label" for="pilot-email">Email</label>
+        <input class="form-input" id="pilot-email" name="email" type="email" required>
+        <label class="form-label" for="pilot-company">Company or organization</label>
+        <input class="form-input" id="pilot-company" name="company" type="text" required>
+        <label class="form-label" for="pilot-team">Team size (optional)</label>
+        <input class="form-input" id="pilot-team" name="team_size" type="text">
+        <label class="form-label" for="pilot-message">What would you pilot?</label>
+        <textarea class="form-input form-textarea" id="pilot-message" name="message" required></textarea>
+        <p class="form-privacy">Your request goes to kevin@scryware.io and is used only to answer it.</p>
+        <button class="cta form-submit" type="submit">Request Pilot Access</button>
+      </form>
+    </div>
+    <p class="sub" style="margin-top: 24px;">Prefer email? Write to <a href="mailto:kevin@scryware.io">kevin@scryware.io</a>.</p>
+  </section>
+
+  <script>
+    if (new URLSearchParams(window.location.search).get("thanks") === "1") {
+      document.getElementById("thanks").style.display = "block";
+    }
+  </script>
+
+  <footer>
+    <div>&copy; 2026 Scryware. All rights reserved.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#how">How it works</a>
+      <a href="#pilot">Pilot access</a>
+      <a href="https://scryware.io/company.html">Company</a>
+      <a href="https://scryware.io/privacy.html">Privacy</a>
+      <a href="https://buy.stripe.com/00w6oIbPaadI0RdgYY18c00">Support</a>
+    </nav>
+  </footer>
+
+</div>
+</body>
+</html>
